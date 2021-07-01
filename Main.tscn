@@ -1,7 +1,17 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Main.vs" type="Script" id=1]
 [ext_resource path="res://Empty.png" type="Texture" id=2]
+[ext_resource path="res://font.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+font_data = ExtResource( 3 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 32
+outline_size = 1
+outline_color = Color( 0.0313726, 0.027451, 0.027451, 1 )
+font_data = ExtResource( 3 )
 
 [node name="Main" type="Node2D"]
 script = ExtResource( 1 )
@@ -12,23 +22,24 @@ scale = Vector2( 1.07609, 1.00585 )
 texture = ExtResource( 2 )
 
 [node name="Button" type="Button" parent="."]
-margin_left = 406.2
-margin_top = 291.261
-margin_right = 564.2
-margin_bottom = 324.261
-text = "Click"
+margin_left = 409.762
+margin_top = 283.246
+margin_right = 567.762
+margin_bottom = 316.246
+custom_fonts/font = SubResource( 1 )
+text = "Press"
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
 [node name="Label" type="Label" parent="."]
 light_mask = 67
-margin_left = 477.366
-margin_top = 238.321
-margin_right = 503.366
-margin_bottom = 263.321
+margin_left = 477.0
+margin_top = 238.0
+margin_right = 500.0
+margin_bottom = 274.0
+custom_fonts/font = SubResource( 2 )
 text = "0"
-align = 1
 max_lines_visible = 1
 __meta__ = {
 "_edit_use_anchors_": false
