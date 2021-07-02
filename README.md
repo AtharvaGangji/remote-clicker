@@ -1,6 +1,6 @@
-# remote clicker
+# Remote Clicker
  
-## Click! Click! Click!!!
+### Click! Click! Click!!!
 Just sit back and start clicking. It is satisfying. 
 
 Can you beat my score? (500)
